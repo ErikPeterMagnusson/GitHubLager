@@ -26,6 +26,10 @@ namespace GitHubLager
             Console.WriteLine("// Välkommen till GitHubLager");
             Console.WriteLine("// Tryck på X för att visa lista på ordrar:");
             Console.WriteLine("===============================================");
+            while (true)
+            {
+
+            
             string switch1 = Console.ReadLine();
             Console.WriteLine("===============================================");
 
@@ -83,7 +87,7 @@ namespace GitHubLager
                         Console.WriteLine("===============================================");
                         
                     }
-                Console.ReadKey();
+                
                 break;
                 // CASE 1: SHOW ORDER 1
                 case "1":
@@ -94,7 +98,7 @@ namespace GitHubLager
                     Console.WriteLine("Ordernummer: " + order.OrderNumber);
                     Console.WriteLine("Kund: " + order.Customer);
                     Console.WriteLine("===============================================");
-                Console.ReadKey();
+                
                 break;
                 // CASE 2: SHOW ORDER 2
                 case "2":
@@ -105,7 +109,7 @@ namespace GitHubLager
                 Console.WriteLine("Ordernummer: " + order22.OrderNumber);
                 Console.WriteLine("Kund: " + order22.Customer);
                 Console.WriteLine("===============================================");
-                Console.ReadKey();
+                
                 break;
                 // CASE 3: SHOW ORDER 3
                 case "3":
@@ -115,10 +119,16 @@ namespace GitHubLager
                 Console.WriteLine("Orderbeskrivning: " + order33.OrderDescription);
                 Console.WriteLine("Ordernummer: " + order33.OrderNumber);
                 Console.WriteLine("Kund: " + order33.Customer);
-                Console.WriteLine("===============================================");
-                Console.ReadKey();
+                Console.WriteLine("===============================================");                
                 break;
+                case "Exit":
+                    return;
+                default:
+                    Console.WriteLine("Sorry! We don´t have that ordernr!");
+                    break;
             } // SWITCH END
+            }
+            
         } // MAIN END
     } //PROGRAM END
 } //NAMESPACE END
