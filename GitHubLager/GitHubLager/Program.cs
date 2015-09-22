@@ -10,6 +10,7 @@ namespace GitHubLager
     {
         static void Main(string[] args)
         {
+
             // DECLARE VARIABLES AT PROGRAM START
             var item1 = new Item();
             var item2 = new Item();
