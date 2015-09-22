@@ -15,5 +15,15 @@ namespace GitHubLager
         public int          OrderNumber         { get; set; }
         public string       OrderDescription    { get; set; }
         public string       ShippingAdress      { get; set; }
+
+        public void SetItems(IEnumerable<Item> ordItems)
+        {
+            OrderItems = new List<Item>();
+            foreach (var item in ordItems)
+            {
+                OrderItems.Add(new Item(item));
+            }
+        }
     }
+
 }

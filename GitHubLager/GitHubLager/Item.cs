@@ -15,5 +15,15 @@ namespace GitHubLager
         public int Width { get; set; }
         public int Heigth { get; set; }
         public int Weigth { get; set; }
+        public Item()
+        {
+        }
+        public Item(Item item)
+        {
+            this.Id = item.Id;
+            this.Name = item.Name;
+            this.Type = item.Type;
+            this.Length = item.Length;
+        }
     }
 }
