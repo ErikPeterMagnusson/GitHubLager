@@ -33,12 +33,11 @@ namespace GitHubLager
             {   
                 // CASE 1: SHOW LIST OF ALL ORDERS
                 case "X":
-                case "x":
                 List<Item> orderItems = new List<Item>();
-            orderItems.Add(item4);
-            orderItems.Add(item3);
-            orderItems.Add(item2);
-            orderItems.Add(item1);
+                orderItems.Add(item4);
+                orderItems.Add(item3);
+                orderItems.Add(item2);
+                orderItems.Add(item1);
 
                 // DETAILS FOR ORDER 1
                 var order1 = new Order();
