@@ -83,11 +83,6 @@ namespace GitHubLager
                         Console.WriteLine("");
                         Console.ReadKey();
                     }
-                    foreach (Item i in orderItems)
-                    {
-                        Console.WriteLine(i);
-                        Console.ReadKey();
-                    }
 
 
                     break;
