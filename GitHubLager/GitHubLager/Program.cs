@@ -10,6 +10,7 @@ namespace GitHubLager
     {
         static void Main(string[] args)
         {
+
             // DECLARE VARIABLES AT PROGRAM START
             var item1 = new Item();
             var item2 = new Item();
@@ -33,6 +34,7 @@ namespace GitHubLager
             {
                 // CASE 1: SHOW LIST OF ALL ORDERS
                 case "X":
+                case "x":
                     List<Item> orderItems = new List<Item>();
                     orderItems.Add(item4);
                     orderItems.Add(item3);
@@ -80,6 +82,13 @@ namespace GitHubLager
                         Console.WriteLine("");
                         Console.ReadKey();
                     }
+                    foreach (Item i in orderItems)
+                    {
+                        Console.WriteLine(i);
+                        Console.ReadKey();
+                    }
+
+                    break;
             }
         }
     }
