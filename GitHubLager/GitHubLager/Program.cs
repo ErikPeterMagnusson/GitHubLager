@@ -120,7 +120,7 @@ namespace GitHubLager // START NAMESPACE
                 case "Exit":
                     return;
                 default:
-                    Console.WriteLine("Sorry! We don´t have that ordernr!");
+                    Console.WriteLine("Sorry! Try again!");
                     break;
             } // SWITCH END
             }
