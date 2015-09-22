@@ -42,7 +42,8 @@ namespace GitHubLager
                     orderItems.Add(item1);
 
                     // DETAILS FOR ORDER 1
-                    var order1 = new Order();
+                    Order order1 = new Order();
+                    order1.OrderItems<Order item1>
                     order1.Item = "Test produkt";
                     order1.Customer = "Test AB";
                     order1.OrderNumber = 1;
@@ -80,15 +81,10 @@ namespace GitHubLager
                         Console.WriteLine("Ordernummer: " + x.OrderNumber);
                         Console.WriteLine("Kund: " + x.Customer);
                         Console.WriteLine("");
-                        Console.ReadKey();
+                        Console.WriteLine("Test"+orders.ToList());
                     }
-                    foreach (Item i in orderItems)
-                    {
-                        Console.WriteLine(i);
                         Console.ReadKey();
-                    }
-
-                    break;
+                break;
             }
         }
     }
