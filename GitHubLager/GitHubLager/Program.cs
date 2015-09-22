@@ -117,6 +117,7 @@ namespace GitHubLager // START NAMESPACE
                 Console.WriteLine("Kund: " + order33.Customer);
                 Console.WriteLine("===============================================");                
                 break;
+
                 case "Exit":
                     return;
                 default:
