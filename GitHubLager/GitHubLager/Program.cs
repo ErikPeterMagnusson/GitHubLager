@@ -10,8 +10,7 @@ namespace GitHubLager
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Välkommen till GitHubLager");
-            Console.ReadKey();
+            Console.WriteLine("Detta är vår Stock");
         }
     }
 }
