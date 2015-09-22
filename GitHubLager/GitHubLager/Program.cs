@@ -117,6 +117,8 @@ namespace GitHubLager // START NAMESPACE
                         Console.WriteLine("===============================================");
                         break;
                     case "Exit":
+                    case "exit":
+                    case "EXIT":
                         return;
                     default:
                         Console.WriteLine("Sorry! Try again!");
