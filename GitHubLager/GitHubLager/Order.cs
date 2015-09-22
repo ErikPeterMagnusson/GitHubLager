@@ -10,6 +10,7 @@ namespace GitHubLager
     {
         public string       Item                { get; set; }
         public string       Customer            { get; set; }
+        public List<Item>   OrderItems          { get; set; }
         public int          OrderNumber         { get; set; }
         public string       OrderDescription    { get; set; }
         public string       ShippingAdress      { get; set; }
