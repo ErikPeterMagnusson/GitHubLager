@@ -10,7 +10,6 @@ namespace GitHubLager // START NAMESPACE
     {
         static void Main(string[] args) // START MAIN
         {
-
             // DECLARE VARIABLES AT PROGRAM START
             var item1 = new Item();
             var item2 = new Item();
@@ -22,14 +21,15 @@ namespace GitHubLager // START NAMESPACE
             item4.Name = "Item 4";
 
             // STARTUP INTRO TEXT
-            Console.WriteLine("===============================================");
+            Console.WriteLine("=============================================================");
             Console.WriteLine("// Välkommen till GitHubLager");
             Console.WriteLine("// Tryck på X för att visa lista på ordrar:");
-            Console.WriteLine("===============================================");
+            Console.WriteLine("// Tryck på ordernr(1,2 eller 3) för att visa specifik order:");
+            Console.WriteLine("=============================================================");
             while (true) //WHILE LOOP SÅ ATT CONSOLEN INTE DÖR!!!
             {            
             string switch1 = Console.ReadLine();
-            Console.WriteLine("===============================================");
+                Console.WriteLine("=========================================================");
 
             // CREATE LIST
             List<Item> orderItems = new List<Item>();
@@ -83,7 +83,6 @@ namespace GitHubLager // START NAMESPACE
                         Console.WriteLine("Ordernummer: " + x.OrderNumber);
                         Console.WriteLine("Kund: " + x.Customer);
                         Console.WriteLine("===============================================");
-                        
                     }
                 
                 break;
@@ -125,7 +124,6 @@ namespace GitHubLager // START NAMESPACE
                     break;
             } // SWITCH END
             } // WHILE END
-            
         } // MAIN END
     } //PROGRAM END
 } //NAMESPACE END

@@ -24,6 +24,9 @@ namespace GitHubLager
             this.Name = item.Name;
             this.Type = item.Type;
             this.Length = item.Length;
+            this.Width = item.Width;
+            this.Heigth = item.Heigth;
+            this.Weigth = item.Weigth;
         }
     }
 }
