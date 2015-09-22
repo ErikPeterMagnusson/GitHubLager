@@ -8,6 +8,7 @@ namespace GitHubLager
 {
     class Order
     {
+        public string       Item                { get; set; }
         public string       Customer            { get; set; }
         public int          OrderNumber         { get; set; }
         public string       OrderDescription    { get; set; }
