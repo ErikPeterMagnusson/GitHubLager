@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GitHubLager
+namespace GitHubLager // START NAMESPACE
 {
-    class Program
+    class Program // START PROGRAM
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // START MAIN
         {
-
             // DECLARE VARIABLES AT PROGRAM START
             var item1 = new Item();
             var item2 = new Item();
@@ -72,52 +71,50 @@ namespace GitHubLager
                 // CASE X: SHOW LIST OF ALL ORDERS
                 case "X":
                 case "x":
-
                 foreach (Order x in orders)
-                    {
-                        Console.WriteLine("Produktnamn: " + x.Item);
-                        Console.WriteLine("Kund: " + x.Customer);
-                        Console.WriteLine("Orderbeskrivning: " + x.OrderDescription);
-                        Console.WriteLine("Ordernummer: " + x.OrderNumber);
-                        Console.WriteLine("Kund: " + x.Customer);
-                        Console.WriteLine("===============================================");
-                        
-                    }
+                {
+                    Console.WriteLine("Produktnamn: " + x.Item);
+                    Console.WriteLine("Kund: " + x.Customer);
+                    Console.WriteLine("Orderbeskrivning: " + x.OrderDescription);
+                    Console.WriteLine("Ordernummer: " + x.OrderNumber);
+                    Console.WriteLine("Kund: " + x.Customer);
+                    Console.WriteLine("===============================================");      
+                }
                 Console.ReadKey();
                 break;
                 // CASE 1: SHOW ORDER 1
                 case "1":
-                var order = orders.Single(x => x.OrderNumber == 1);
+                    var order = orders.Single(x => x.OrderNumber == 1);
                     Console.WriteLine("Produktnamn: " + order.Item);
                     Console.WriteLine("Kund: " + order.Customer);
                     Console.WriteLine("Orderbeskrivning: " + order.OrderDescription);
                     Console.WriteLine("Ordernummer: " + order.OrderNumber);
                     Console.WriteLine("Kund: " + order.Customer);
                     Console.WriteLine("===============================================");
-                Console.ReadKey();
-                break;
+                    Console.ReadKey();
+                    break;
                 // CASE 2: SHOW ORDER 2
                 case "2":
-                var order22 = orders.Single(x => x.OrderNumber == 2);
-                Console.WriteLine("Produktnamn: " + order22.Item);
-                Console.WriteLine("Kund: " + order22.Customer);
-                Console.WriteLine("Orderbeskrivning: " + order22.OrderDescription);
-                Console.WriteLine("Ordernummer: " + order22.OrderNumber);
-                Console.WriteLine("Kund: " + order22.Customer);
-                Console.WriteLine("===============================================");
-                Console.ReadKey();
-                break;
+                    var order22 = orders.Single(x => x.OrderNumber == 2);
+                    Console.WriteLine("Produktnamn: " + order22.Item);
+                    Console.WriteLine("Kund: " + order22.Customer);
+                    Console.WriteLine("Orderbeskrivning: " + order22.OrderDescription);
+                    Console.WriteLine("Ordernummer: " + order22.OrderNumber);
+                    Console.WriteLine("Kund: " + order22.Customer);
+                    Console.WriteLine("===============================================");
+                    Console.ReadKey();
+                    break;
                 // CASE 3: SHOW ORDER 3
                 case "3":
-                var order33 = orders.Single(x => x.OrderNumber == 3);
-                Console.WriteLine("Produktnamn: " + order33.Item);
-                Console.WriteLine("Kund: " + order33.Customer);
-                Console.WriteLine("Orderbeskrivning: " + order33.OrderDescription);
-                Console.WriteLine("Ordernummer: " + order33.OrderNumber);
-                Console.WriteLine("Kund: " + order33.Customer);
-                Console.WriteLine("===============================================");
-                Console.ReadKey();
-                break;
+                    var order33 = orders.Single(x => x.OrderNumber == 3);
+                    Console.WriteLine("Produktnamn: " + order33.Item);
+                    Console.WriteLine("Kund: " + order33.Customer);
+                    Console.WriteLine("Orderbeskrivning: " + order33.OrderDescription);
+                    Console.WriteLine("Ordernummer: " + order33.OrderNumber);
+                    Console.WriteLine("Kund: " + order33.Customer);
+                    Console.WriteLine("===============================================");
+                    Console.ReadKey();
+                    break;
             } // SWITCH END
         } // MAIN END
     } //PROGRAM END
