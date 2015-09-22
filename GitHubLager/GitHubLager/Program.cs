@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace GitHubLager
 {
     class Program
@@ -13,6 +14,11 @@ namespace GitHubLager
             Console.WriteLine("Välkommen till GitHubLager");
             Console.WriteLine("");
             Console.ReadKey();
+
+
+            var lager1 = new Stock();
+            lager1.StockID = 1;
+
 
             var order1 = new Order();
             order1.Item = "Test produkt";
