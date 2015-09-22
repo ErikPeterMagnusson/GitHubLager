@@ -10,7 +10,7 @@ namespace GitHubLager
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Nu har Aron förstört");
+            Console.WriteLine("Välkommen till GitHubLager");
             Console.ReadKey();
         }
     }
