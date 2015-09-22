@@ -12,5 +12,8 @@ namespace GitHubLager
         public string Name { get; set; }
         public string Type { get; set; }
         public int Length { get; set; }
+        public int Width { get; set; }
+        public int Heigth { get; set; }
+        public int Weigth { get; set; }
     }
 }
