@@ -21,23 +21,24 @@ namespace GitHubLager
             item4.Name = "Item 4";
 
             // STARTUP INTRO TEXT
-            Console.WriteLine("Välkommen till GitHubLager");
-            Console.WriteLine("Tryck på 1 för att visa lista på ordrar");
-            Console.WriteLine("");
+            Console.WriteLine("===============================================");
+            Console.WriteLine("// Välkommen till GitHubLager");
+            Console.WriteLine("// Tryck på X för att visa lista på ordrar:");
+            Console.WriteLine("===============================================");
 
             // SWITCH
             string switch1 = Console.ReadLine();
+            Console.WriteLine("===============================================");
             switch (switch1)
             {   
                 // CASE 1: SHOW LIST OF ALL ORDERS
-                case "1":
+                case "X":
                 List<Item> orderItems = new List<Item>();
 
                 // DETAILS FOR ORDER 1
                 var order1 = new Order();
                 order1.Item = "Test produkt";
                 order1.Customer = "Test AB";
-                // order1.OrderItems = "";
                 order1.OrderNumber = 1;
                 order1.OrderDescription = "Nya varor till renovering.";
                 order1.ShippingAdress = "Testgatan 1, 81010 Testa";
