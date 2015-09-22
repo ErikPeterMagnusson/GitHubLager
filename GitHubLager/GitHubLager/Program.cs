@@ -13,18 +13,30 @@ namespace GitHubLager
             Console.WriteLine("Välkommen till GitHubLager");
             Console.ReadKey();
 
+            var item1 = new Item();
+            var item2 = new Item();
+            var item3 = new Item();
+            var item4 = new Item();
+            item1.Name = "Item 1";
+            item2.Name = "Item 2";
+            item3.Name = "Item 3";
+            item4.Name = "Item 4";
+
+            List<Item> orderItems = new List<Item>();
+
             var order1 = new Order();
             order1.Item = "Produkt Ett";
             order1.Customer = "Test AB";
-            order1.OrderDescription = "Nya varor till renovering.";
+            order1.OrderItems = "";
             order1.OrderNumber = 1;
+            order1.OrderDescription = "Nya varor till renovering.";
             order1.ShippingAdress = "Testgatan 1, 81010 Testa";
 
             var order2 = new Order();
             order2.Item = "Produkt Två";
             order2.Customer = "Mejeriet AB";
-            order2.OrderDescription = "Uppgradera ladan";
             order2.OrderNumber = 2;
+            order2.OrderDescription = "Uppgradera ladan";
             order2.ShippingAdress = "Kogatan 1, 84420 Koland";
 
 
@@ -43,6 +55,8 @@ namespace GitHubLager
                 Console.WriteLine("");
                 Console.ReadKey();
             }
+            Console.WriteLine(order1.OrderItems);
+                Console.ReadKey();
         }
     }
 }
