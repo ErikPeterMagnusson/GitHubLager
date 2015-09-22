@@ -10,7 +10,7 @@ namespace GitHubLager
     {
         public int StockID { get; set; }
         public int StockLocation { get; set; }
-        public string Item { get; set; }
+        public List<Item> StockItem { get; set; }
         public int Capacity { get; set; }
         public int Quantity { get; set; }
     }
