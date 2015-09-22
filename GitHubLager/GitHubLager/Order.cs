@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitHubLager
 {
+    // DEFINE CLASS
     class Order
     {
         public string       Item                { get; set; }
