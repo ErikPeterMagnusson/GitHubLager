@@ -79,8 +79,9 @@ namespace GitHubLager
                         Console.WriteLine("Orderbeskrivning: " + x.OrderDescription);
                         Console.WriteLine("Ordernummer: " + x.OrderNumber);
                         Console.WriteLine("Kund: " + x.Customer);
+                        
                         Console.WriteLine("===============================================");
-                        Console.WriteLine("");
+                        
                         Console.ReadKey();
                     }
 
