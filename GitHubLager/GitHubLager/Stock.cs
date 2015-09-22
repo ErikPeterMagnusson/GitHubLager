@@ -8,5 +8,10 @@ namespace GitHubLager
 {
     class Stock
     {
+        public int StockID { get; set; }
+        public int StockLocation { get; set; }
+        public int Capacity { get; set; }
+        public int Quantity { get; set; }
+
     }
 }
