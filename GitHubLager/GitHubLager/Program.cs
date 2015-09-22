@@ -26,7 +26,7 @@ namespace GitHubLager // START NAMESPACE
             Console.WriteLine("// Välkommen till GitHubLager");
             Console.WriteLine("// Tryck på X för att visa lista på ordrar:");
             Console.WriteLine("===============================================");
-            while (true)
+            while (true) //WHILE LOOP SÅ ATT CONSOLEN INTE DÖR!!!
             {            
             string switch1 = Console.ReadLine();
             Console.WriteLine("===============================================");
@@ -123,7 +123,7 @@ namespace GitHubLager // START NAMESPACE
                     Console.WriteLine("Sorry! Try again!");
                     break;
             } // SWITCH END
-            }
+            } // WHILE END
             
         } // MAIN END
     } //PROGRAM END
