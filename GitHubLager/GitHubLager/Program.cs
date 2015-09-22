@@ -34,7 +34,12 @@ namespace GitHubLager
             {   
                 // CASE 1: SHOW LIST OF ALL ORDERS
                 case "X":
+                case "x":
                 List<Item> orderItems = new List<Item>();
+            orderItems.Add(item4);
+            orderItems.Add(item3);
+            orderItems.Add(item2);
+            orderItems.Add(item1);
 
                 // DETAILS FOR ORDER 1
                 var order1 = new Order();
@@ -73,15 +78,15 @@ namespace GitHubLager
                     Console.WriteLine("Kund: " + x.Customer);
                     Console.WriteLine("Orderbeskrivning: " + x.OrderDescription);
                     Console.WriteLine("Ordernummer: " + x.OrderNumber);
-                    Console.WriteLine("Vi skickar ordern till adressen: " + x.ShippingAdress);
+                Console.WriteLine("Kund: " + x.Customer);
                     Console.WriteLine("");
                     Console.ReadKey();
                 }
-
-                Console.WriteLine(order1.OrderItems);
+            foreach (Item i in orderItems)
+            {               
+            Console.WriteLine(i);
                 Console.ReadKey();
-                break;
-            } // SWITCH END
-        } // MAIN END
-    } // CLASS END
-} // NAMESPACE END
+            }
+        }
+    }
+}
