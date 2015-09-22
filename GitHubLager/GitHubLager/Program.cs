@@ -81,9 +81,8 @@ namespace GitHubLager
                         Console.WriteLine("Kund: " + x.Customer);
                         Console.WriteLine("===============================================");
                         
-                        Console.ReadKey();
                     }
-
+                    Console.ReadKey();
 
                     break;
             }
