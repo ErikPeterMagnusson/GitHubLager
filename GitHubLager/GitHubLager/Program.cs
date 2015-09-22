@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GitHubLager
+namespace GitHubLager // START NAMESPACE
 {
-    class Program
+    class Program // START PROGRAM
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // START MAIN
         {
 
             // DECLARE VARIABLES AT PROGRAM START
@@ -27,9 +27,7 @@ namespace GitHubLager
             Console.WriteLine("// Tryck på X för att visa lista på ordrar:");
             Console.WriteLine("===============================================");
             while (true)
-            {
-
-            
+            {            
             string switch1 = Console.ReadLine();
             Console.WriteLine("===============================================");
 
@@ -97,8 +95,7 @@ namespace GitHubLager
                     Console.WriteLine("Orderbeskrivning: " + order.OrderDescription);
                     Console.WriteLine("Ordernummer: " + order.OrderNumber);
                     Console.WriteLine("Kund: " + order.Customer);
-                    Console.WriteLine("===============================================");
-                
+                    Console.WriteLine("===============================================");                
                 break;
                 // CASE 2: SHOW ORDER 2
                 case "2":
@@ -108,8 +105,7 @@ namespace GitHubLager
                 Console.WriteLine("Orderbeskrivning: " + order22.OrderDescription);
                 Console.WriteLine("Ordernummer: " + order22.OrderNumber);
                 Console.WriteLine("Kund: " + order22.Customer);
-                Console.WriteLine("===============================================");
-                
+                Console.WriteLine("===============================================");                
                 break;
                 // CASE 3: SHOW ORDER 3
                 case "3":
