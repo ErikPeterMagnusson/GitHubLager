@@ -35,7 +35,8 @@ namespace GitHubLager
 
             foreach (Order x in orders)
             {               
-                Console.WriteLine();
+                Console.WriteLine("Produktnamn: " + x.Item + "Kund: " + x.Customer + "Orderbeskrivning: " + x.OrderDescription +"ordernummer: " + x.OrderNumber + "vi skickar ordern till adressen: " + x.ShippingAdress);
+                Console.ReadKey();
             }
         }
     }
