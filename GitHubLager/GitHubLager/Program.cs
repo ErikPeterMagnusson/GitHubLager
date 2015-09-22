@@ -11,6 +11,7 @@ namespace GitHubLager
         static void Main(string[] args)
         {
             Console.WriteLine("Nu har Aron förstört");
+            Console.WriteLine("Nu har Izzet även förstört");
             Console.ReadKey();
         }
     }
